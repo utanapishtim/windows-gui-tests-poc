@@ -4,7 +4,7 @@ on:
     branches:
       - windows-gui-test-poc
 jobs:
-  macos:
+  windows:
     runs-on: windows-latest
     steps:
       - name: checkout

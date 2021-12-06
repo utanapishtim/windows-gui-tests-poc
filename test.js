@@ -6,7 +6,10 @@ const { pipeline, Writable } = require('streamx')
 const deepkill = require('deepkill')
 const { port } = require('./port.json')
 
-const child = spawn('npm', ['start'])
+let cmd = 'npm'
+if (process.platform === 'win32') cmd = 'npm.cmd'
+
+const child = spawn(cmd, ['start'])
 
 test('can read dom', async ({ plan, is, teardown }) => {
   plan(1)

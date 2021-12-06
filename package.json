@@ -18,7 +18,7 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^16.0.2"
+    "electron": "^16.0.4"
   },
   "dependencies": {
     "brittle": "^2.0.0",
