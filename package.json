@@ -4,7 +4,8 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "test": "brittle test.js"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -18,5 +19,12 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^16.0.2"
+  },
+  "dependencies": {
+    "brittle": "^2.0.0",
+    "chrome-remote-interface": "^0.31.1",
+    "deepkill": "^0.2.0",
+    "get-port": "^6.0.0",
+    "streamx": "^2.12.0"
   }
 }
